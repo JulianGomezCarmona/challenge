@@ -1,0 +1,51 @@
+spring:
+  data:
+    rest:
+      base-path: /api
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/mystore
+    username: root
+    password: Dynamia2024*
+    driver-class-name:
+
+
+
+logging:
+  level:
+    root: info
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: mappings
+
+server:
+  port: 8484
+  servlet:
+    session:
+      tracking-modes: cookie
+
+
+dynamia:
+  app:
+    name: @project.name@
+    defaultSkin: Green
+    template: Dynamical
+    defaultLogo: /zkau/web/images/logo.png
+    defaultIcon: /zkau/web/images/icon.png
+    basePackage: store
+    shortName: Tools
+    version: @project.version@
+    description: @project.description@
+    build: @timestamp@
+    author: @author@
+    url: @project.url@
+
+

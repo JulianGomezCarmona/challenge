@@ -1,0 +1,8 @@
+view: form
+beanClass: store.domain.Client
+autofields: false
+
+fields:
+  nombre:
+  email:
+  telefono:

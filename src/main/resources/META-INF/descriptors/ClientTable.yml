@@ -1,0 +1,3 @@
+view: table
+beanClass: store.domain.Client
+autofields: true

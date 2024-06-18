@@ -1,0 +1,37 @@
+<zk>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <borderlayout style="display: flex; justify-content: center; width: 100%; text-align: center;">
+        <north>
+            <label style="font-weight: bold; font-size: 70px; color: #34D399;" value="Creación de pedidos"/>
+        </north>
+        <center style="width: 35%; display: flex; margin-top: 1rem; justify-content: center;">
+            <vlayout style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+                <hlayout style="width: 270px; display: flex; justify-content: space-between; align-items: center;">
+                    <label value="Cliente"/>
+                    <combobox style="text-align: center;">
+                        <comboitem style="text-align: center; display: flex; justify-content: center; width: 100%;" label="Seleccione_un_cliente"  />
+                        <comboitem style="text-align: center; display: flex; justify-content: center; width: 100%;" label="Carlos"  />
+                        <comboitem style="text-align: center; display: flex; justify-content: center; width: 100%;" label="Juan"  />
+                    </combobox>
+                </hlayout>
+                <hlayout style="display: flex; width: 270px; justify-content: space-between; align-items: center;">
+                    <label value="Productos"/>
+                    <combobox style="text-align: center;">
+                        <comboitem style="text-align: center; display: flex; justify-content: center; width: 100%;" label="Seleccione_un_producto"  />
+                        <comboitem style="text-align: center; display: flex; justify-content: center; width: 100%;" label="Coca-cola"  />
+                        <comboitem style="text-align: center; display: flex; justify-content: center; width: 100%;" label="Pepsi"  />
+                    </combobox>
+                </hlayout>
+                <hlayout style="display: flex; width: 270px; justify-content: space-between; align-items: center;">
+                    <label value="Cantidad"/>
+                    <textbox style="width: 195.33px; text-align: center;"/>
+                </hlayout>
+                <hlayout style="display: flex; width: 270px; justify-content: space-between; align-items: center;">
+                    <label value="Precio"/>
+                    <intbox style="width: 195.33px; text-align: center;" disabled="true" value="344" />
+                </hlayout>
+                <button style="margin-top: 25px; padding-left: 1rem; padding-right: 1rem; padding-top: 0.25rem; padding-bottom: 0.25rem;" label="Crear pedido"/>
+            </vlayout>
+        </center>
+    </borderlayout>
+</zk>

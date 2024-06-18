@@ -1,0 +1,2 @@
+view: crud
+beanClass: store.domain.Products

@@ -1,0 +1,7 @@
+view: form
+beanClass: store.domain.Products
+autofields: false
+
+fields:
+  nombre:
+  precio:
